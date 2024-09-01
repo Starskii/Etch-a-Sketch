@@ -6,9 +6,12 @@ html, body{
     margin: 0;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
-.container{
+#container{
     display: flex;
     padding: 0;
     width: 500px;
@@ -26,9 +29,12 @@ html, body{
 .row{
     flex: 1;
     background-color: white;
-    border: 1px black solid;
     padding: 0;
     margin: 0;
+}
+
+.row.filled{
+    background-color: darkgray;
 }
 
 .row:hover{
