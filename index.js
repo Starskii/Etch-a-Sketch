@@ -23,6 +23,7 @@ const drawBox = (width, height) => {
             const ROW_NODE = document.createElement("div");
             ROW_NODE.classList.add("row"); 
             ROW_NODE.addEventListener("mouseover", elementClicked);
+            ROW_NODE.addEventListener("mousedown", (e) => {e.target.classList.add("filled");});
             COLUMN_NODE.appendChild(ROW_NODE);
         }
         container.appendChild(COLUMN_NODE);
