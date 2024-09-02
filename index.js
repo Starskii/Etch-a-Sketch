@@ -55,7 +55,7 @@ container.addEventListener("mousedown", function(e) {
     console.log(drawState);
 });
 
-container.addEventListener("mouseup", function(e) {
+window.addEventListener("mouseup", function(e) {
     e.preventDefault();
     if(e.button===0)
         drawState = false;
